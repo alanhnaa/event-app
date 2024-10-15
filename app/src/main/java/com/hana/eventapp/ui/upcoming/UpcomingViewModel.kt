@@ -80,6 +80,3 @@ class UpcomingViewModel() : ViewModel(), Parcelable {
     }
 }
 
-private fun <T> Call<T>.enqueue(callback: Callback<ListEventResponse>) {
-    TODO("Not yet implemented")
-}
