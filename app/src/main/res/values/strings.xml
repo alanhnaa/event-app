@@ -1,0 +1,21 @@
+<resources>
+        <string name="app_name">Dicoding Events</string>
+        <string name="title_home">Home</string>
+        <string name="title_upcoming">Upcoming</string>
+        <string name="title_finished">Finished</string>
+        <string name="dicoding_event">Dicoding Event</string>
+        <string name="recommendation">Recommendation for you!</string>
+        <string name="kuota">Kuota : </string>
+        <string name="quota_value">12</string>
+        <string name="registrasi">Registrasi : </string>
+        <string name="registrant_value">10</string>
+        <string name="online">Online</string>
+        <string name="time">11 – 13 pm</string>
+        <string name="description">Description</string>
+        <string name="register">Daftar Sekarang</string>
+        <string name="detail">Detail Event</string>
+        <string name="no_internet_access">NO INTERNET ACCESS</string>
+        <string name="upcoming_event">Upcoming Event</string>
+        <string name="finished_event">Finished Event</string>
+        <string name="yuk_jelajahi_semua_event_dicoding">Yuk Jelajahi Semua Event Dicoding</string>
+</resources>

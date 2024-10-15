@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.detail.DetailActivity">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="@string/app_name"
+            android:textColor="@color/gray_500"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:text="@string/app_name"
+            android:textColor="@color/gray_500"
+            android:fontFamily="@font/open_sans_medium"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/iv_quota"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:contentDescription="@string/kuota"
+                    android:src="@drawable/baseline_list_alt_24"/>
+
+                <TextView
+                    android:id="@+id/quota_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_quota"
+                    android:textColor="@color/gray_300"
+                    android:text="@string/quota_value"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp"
+                    android:fontFamily="@font/open_sans_medium"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_registrant"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:contentDescription="@string/registrasi"
+                    android:src="@drawable/baseline_book_online_24"/>
+
+                <TextView
+                    android:id="@+id/registrant_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_registrant"
+                    android:text="@string/registrant_value"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp"
+                    android:textColor="@color/gray_300"
+                    android:fontFamily="@font/open_sans_medium"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:contentDescription="@string/registrasi"
+                    android:src="@drawable/baseline_location_pin_24"/>
+
+                <TextView
+                    android:id="@+id/location_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_location"
+                    android:text="@string/online"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="2dp"
+                    android:textColor="@color/gray_300"
+                    android:fontFamily="@font/open_sans_medium"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/registrasi"
+                android:src="@drawable/baseline_access_time_filled_24"/>
+
+            <TextView
+                android:id="@+id/time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_time"
+                android:text="@string/time"
+                android:textSize="13sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/gray_300"
+                android:fontFamily="@font/open_sans_medium"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/description"
+            android:textSize="13sp"
+            android:textColor="@color/gray_300"
+            android:fontFamily="@font/open_sans_medium"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textSize="13sp"
+            android:background="@drawable/bg_round"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
